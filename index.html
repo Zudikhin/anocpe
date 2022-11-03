@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <meta name="author" content="Yuriy Zudikhin" />
-    <!-- <link rel="stylesheet" href="css/slick.css" /> -->
     <link rel="stylesheet" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -25,22 +25,53 @@
             <div class="line-menu half end"></div>
           </div>
           <ul class="header_block_menu">
-            <li>
+            <li class="header_block_menu_servies">
               <span>Услуги</span>
             </li>
-            <li>
+            <li class="header_block_menu_geography">
               <span>География проектов</span>
             </li>
-            <li>
+            <li class="header_block_menu_about">
               <span>О нас</span>
             </li>
-            <li>
+            <li class="header_block_menu_team">
               <span>Команда</span>
             </li>
           </ul>
         </div>
       </div>
     </header>
+
+    <div class="container">
+      <div class="navigation">
+        <div id="main" class="navigation_item active">
+          <div class="navigation_item_dot"></div>
+        </div>
+        <div id="offering" class="navigation_item">
+          <div class="navigation_item_dot"></div>
+        </div>
+        <div id="geography" class="navigation_item">
+          <div class="navigation_item_dot"></div>
+        </div>
+        <div id="project" class="navigation_item">
+          <div class="navigation_item_dot"></div>
+        </div>
+        <div id="expert" class="navigation_item">
+          <div class="navigation_item_dot"></div>
+        </div>
+        <div id="about" class="navigation_item">
+          <div class="navigation_item_dot"></div>
+        </div>
+        <div id="team" class="navigation_item">
+          <div class="navigation_item_dot"></div>
+        </div>
+        <div class="navigation_text">
+          <p>SCROLL</p>
+          <img src="img/arrow_nav.svg" alt="">
+        </div>
+      </div>
+    </div>
+    
 
     <div id="fullpage">
 
@@ -931,41 +962,23 @@
             <h2>Успешные проекты</h2>
             <div class="project_block_wrap offering_block_wrap">
               <div class="project_block_wrap_list">
-                <div class="project_block_wrap_list_item">
+                <div data-target="succes_project_1" class="project_block_wrap_list_item">
                   <img src="img/project/1.jpeg" alt="">
                   <h5>Bringing the history of your brand</h5>
                   <p>Bringing the history of your brand to the
                     forefront gives an emotional dimension to your
                     visual identity, which is essential today more
                     than ever in today's digital landscape.</p>
-                  <a href="#">Читать</a>
+                  <button>Читать</button>
                 </div>
-                <div class="project_block_wrap_list_item">
+                <div data-target="succes_project_2" class="project_block_wrap_list_item">
                   <img src="img/project/2.jpeg" alt="">
                   <h5>Bringing the history of your brand</h5>
                   <p>Bringing the history of your brand to the
                     forefront gives an emotional dimension to your
                     visual identity, which is essential today more
                     than ever in today's digital landscape.</p>
-                  <a href="#">Читать</a>
-                </div>
-                <div class="project_block_wrap_list_item">
-                  <img src="img/project/1.jpeg" alt="">
-                  <h5>Bringing the history of your brand</h5>
-                  <p>Bringing the history of your brand to the
-                    forefront gives an emotional dimension to your
-                    visual identity, which is essential today more
-                    than ever in today's digital landscape.</p>
-                  <a href="#">Читать</a>
-                </div>
-                <div class="project_block_wrap_list_item">
-                  <img src="img/project/2.jpeg" alt="">
-                  <h5>Bringing the history of your brand</h5>
-                  <p>Bringing the history of your brand to the
-                    forefront gives an emotional dimension to your
-                    visual identity, which is essential today more
-                    than ever in today's digital landscape.</p>
-                  <a href="#">Читать</a>
+                    <button>Читать</button>
                 </div>
                 <div class="project_block_wrap_list_item">
                   <img src="img/project/1.jpeg" alt="">
@@ -974,7 +987,7 @@
                     forefront gives an emotional dimension to your
                     visual identity, which is essential today more
                     than ever in today's digital landscape.</p>
-                  <a href="#">Читать</a>
+                    <button>Читать</button>
                 </div>
                 <div class="project_block_wrap_list_item">
                   <img src="img/project/2.jpeg" alt="">
@@ -983,7 +996,25 @@
                     forefront gives an emotional dimension to your
                     visual identity, which is essential today more
                     than ever in today's digital landscape.</p>
-                  <a href="#">Читать</a>
+                    <button>Читать</button>
+                </div>
+                <div class="project_block_wrap_list_item">
+                  <img src="img/project/1.jpeg" alt="">
+                  <h5>Bringing the history of your brand</h5>
+                  <p>Bringing the history of your brand to the
+                    forefront gives an emotional dimension to your
+                    visual identity, which is essential today more
+                    than ever in today's digital landscape.</p>
+                    <button>Читать</button>
+                </div>
+                <div class="project_block_wrap_list_item">
+                  <img src="img/project/2.jpeg" alt="">
+                  <h5>Bringing the history of your brand</h5>
+                  <p>Bringing the history of your brand to the
+                    forefront gives an emotional dimension to your
+                    visual identity, which is essential today more
+                    than ever in today's digital landscape.</p>
+                    <button>Читать</button>
                 </div>
               </div>
             </div>
@@ -1031,13 +1062,13 @@
 
             </div>
             <div class="about_block_sert">
-              <div class="about_block_sert_item">
+              <div data-target="sertificate_1" class="about_block_sert_item">
                 <img src="img/about/sert_1.png" alt="">
               </div>
-              <div class="about_block_sert_item">
+              <div data-target="sertificate_2" class="about_block_sert_item">
                 <img src="img/about/sert_2.png" alt="">
               </div>
-              <div class="about_block_sert_item">
+              <div data-target="sertificate_3" class="about_block_sert_item">
                 <img src="img/about/sert_3.png" alt="">
               </div>
             </div>
@@ -1062,10 +1093,98 @@
           </div>
         </div>
       </section>
+
+      <section class="section team">
+        <div class="container">
+          <div class="team_block">
+            <h2>Команда</h2>
+            <div class="team_block_list">
+              
+              <div class="team_block_list_item">
+                <img src="img/team/1.png" alt="">
+                <div class="team_block_list_item_text">
+                  <p>Директор</p>
+                  <h4>Бекшаев Александр</h4>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="team_block_list_item">
+                <img src="img/team/2.png" alt="">
+                <div class="team_block_list_item_text">
+                  <p>Руководитель направления строительно-технической экспертизы</p>
+                  <h4>Леонов Владимир</h4>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="team_form">
+          <div class="container">
+            <div class="team_form_block">
+
+              <div class="team_form_block_text">
+                <h4>Для экспертов</h4>
+                <p>Мы всегда рады новым коллегам, желающим развиваться в профессии бок о бок с единомышленниками. Если Вы эксперт и хотите сотрудничать на взаимовыгодных условиях, заполните короткую форму ниже, и мы с Вами свяжемся.</p>
+              </div>
+
+              <div class="team_form_block_main">
+                <h4>Форма обратной связи</h4>
+                <form action="">
+                  <p>
+                    <span data-name="your-name">
+                      <input type="text" placeholder="ФИО">
+                    </span>
+                    <span>
+                      <input type="text" placeholder="Специальность">
+                    </span>
+                    <span>
+                      <input type="text" placeholder="Образование">
+                    </span>
+                    <span>
+                      <input type="text" placeholder="Стаж работы">
+                    </span>
+                    <span>
+                      <input type="text" placeholder="Последнее место работы">
+                    </span>
+                    <span>
+                      <input type="email" placeholder="E-mail">
+                    </span>
+                    <span>
+                      <input type="tel" placeholder="Телефон">
+                    </span>
+                    <input type="submit" value="Отправить">
+                  </p>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
     
     </div>
 
     <div class="modal_back"></div>
+
+    <div class="dropdown_menu">
+      <ul>
+        <li class="dropdown_menu_services">
+          <span>Услуги</span>
+        </li>
+        <li class="dropdown_menu_geography">
+          <span>География проектов</span>
+        </li>
+        <li class="dropdown_menu_about">
+          <span>О нас</span>
+        </li>
+        <li class="dropdown_menu_team">
+          <span>Команда</span>
+        </li>
+      </ul>
+    </div>
 
     <div id="modal_1" class="modal_info">
       <button class="modal_info_close">
@@ -1073,6 +1192,49 @@
       </button>
       <h4>СТРОИТЕЛЬНО-ТЕХНИЧЕСКИЕ</h4>
       <p>Более 20% зданий и сооружений в Московской области нуждаются в капитальном ремонте или реконструкции. Для разработки проекта капитального ремонта или реконструкции требуется проведение экспертизы с полным техническим обследованием, определением видов и объемов ремонтно-восстановительных работ, расчета их стоимости. Также заключение требуется для признания здания аварийным, обосновать и добиться выделения средств на капремонт или потребовать от управляющей компании ремонта инженерных коммуникаций. Независимая строительная экспертиза зданий и сооружений, выполненная специалистом, имеющим статус эксперта, является таким обоснованием. Центр экспертизы «МОС-ЭКСПЕРТ» оказывает услуги по проведению экспертиз зданий и сооружений в Москве и МО.</p>
+    </div>
+
+    <div id="sertificate_1" class="sertificate_modal">
+      <button class="sertificate_modal_close">
+        <img src="img/close.png" alt="">
+      </button>
+      <img class="sertificate_modal_main" src="img/about/sert_1.png" alt="">
+    </div>
+
+    <div id="sertificate_2" class="sertificate_modal">
+      <button class="sertificate_modal_close">
+        <img src="img/close.png" alt="">
+      </button>
+      <img class="sertificate_modal_main" src="img/about/sert_2.png" alt="">
+    </div>
+
+    <div id="sertificate_3" class="sertificate_modal">
+      <button class="sertificate_modal_close">
+        <img src="img/close.png" alt="">
+      </button>
+      <img class="sertificate_modal_main" src="img/about/sert_3.png" alt="">
+    </div>
+
+    <div id="succes_project_1" class="project_modal">
+      <button class="project_modal_close">
+        <img src="img/close.png" alt="">
+      </button>
+      <div class="project_modal_wrap">
+        <img class="project_modal_main" src="img/project/1.jpeg" alt="">
+        <h4>Bringing the history of your brand</h4>
+        <p>Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape. Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape. Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape. Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape.Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape. Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape.</p>
+        <p>Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape. Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape. Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape. Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape.Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape. Bringing the history of your brand to the forefront gives an emotional dimension to your visual identity, which is essential today more than ever in today's digital landscape.</p>
+      </div>
+    </div>
+
+    <div class="modal_thank">
+      <button class="modal_thank_close">
+        <img src="img/close.png" alt="">
+      </button>
+      <div class="modal_thank_icon">
+        <img src="img/thank/ok.svg" alt="">
+      </div>
+      <p>Форма успешно отправлена</p>
     </div>
 
     <footer class="footer">
@@ -1092,7 +1254,8 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/fullpage.min.js"></script>
-    <!-- <script src="js/snap-scroll.min.js"></script> -->
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
